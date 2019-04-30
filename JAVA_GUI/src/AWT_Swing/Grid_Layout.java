@@ -28,5 +28,5 @@ public class Grid_Layout extends JFrame{
 		// TODO Auto-generated method stub
 		new Grid_Layout();
 	}
-
+	
 }
