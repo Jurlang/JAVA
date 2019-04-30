@@ -13,6 +13,7 @@ import javax.swing.JFrame;
  * 독립 클래스로 이벤트 처리 만들기
  */
 
+@SuppressWarnings("serial")
 public class Personal_Class extends JFrame {
 	public Personal_Class() {
 		setTitle("Action 이벤트 리스너 예제");
