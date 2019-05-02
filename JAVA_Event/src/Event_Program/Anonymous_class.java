@@ -8,6 +8,11 @@ import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+/*
+ * 익명 클래스로 이벤트 처리 만들기
+ */
+
+@SuppressWarnings("serial")
 public class Anonymous_class extends JFrame{
 	Anonymous_class(){
 		setTitle("Action 이벤트 리스너 예제");
