@@ -29,7 +29,6 @@ public class Common_Method extends JFrame{
 		b3.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
 				JButton b = (JButton)e.getSource();
 				Common_Method frm = (Common_Method)b.getTopLevelAncestor();
 				frm.setTitle(b.getX()+", " + b.getY());
@@ -45,7 +44,6 @@ public class Common_Method extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new Common_Method();
 	}
 
