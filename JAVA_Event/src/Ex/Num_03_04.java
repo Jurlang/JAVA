@@ -42,7 +42,6 @@ public class Num_03_04 extends JFrame{
 		@Override
 		public void keyPressed(KeyEvent e) {
 			// TODO Auto-generated method stub
-			System.out.println(e.getKeyCode() + " check : " + check);
 			String str = la.getText();
 			
 			if(e.getKeyCode() == 37) {
@@ -58,7 +57,6 @@ public class Num_03_04 extends JFrame{
 				s.reverse();
 				str = new String(s);
 				la.setText(str);
-				check = false;
 			}
 			
 		}
