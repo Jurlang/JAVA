@@ -9,6 +9,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
+/*
+ * 내부 클래스로 이벤트 처리 만들기
+ */
+
+@SuppressWarnings("serial")
 public class Inner_Class extends JFrame{
 	public Inner_Class() {
 		setTitle("Action 이벤트 리스너 예제");
