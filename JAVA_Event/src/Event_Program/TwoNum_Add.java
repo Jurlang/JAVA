@@ -24,13 +24,13 @@ class MyAction implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		JButton b = (JButton)e.getSource();
 		int num1 = Integer.parseInt(tf1.getText());
 		int num2 = Integer.parseInt(tf2.getText());
 		la.setText(Integer.toString(num1+num2));
 	}
 }
 
+@SuppressWarnings("serial")
 public class TwoNum_Add extends JFrame{
 	JTextField tf1, tf2;
 	JLabel la;
