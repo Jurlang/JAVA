@@ -35,7 +35,7 @@ public class RadioBtnMethod extends JFrame{
 		
 		for(int i=0;i<rb.length;i++) {
 			rb[i] = new JRadioButton(str[i]);
-			rb[i].addItemListener(l);
+			rb[i].addItemListener(l); //라디오 버튼에 리스너 등록
 			g.add(rb[i]);	// 라디오 버튼을 그룹에도 넣고
 			p.add(rb[i]);	// 라디오 버튼을 패널에도 넣고
 		}
