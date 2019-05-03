@@ -53,7 +53,6 @@ public class RadioBtnMethod extends JFrame{
 	}
 	
 	class MyItemListener implements ItemListener{
-
 		@Override
 		public void itemStateChanged(ItemEvent e) {
 			if(e.getStateChange() == ItemEvent.DESELECTED)
@@ -64,8 +63,6 @@ public class RadioBtnMethod extends JFrame{
 				imgla.setIcon(icon[1]);
 			else
 				imgla.setIcon(icon[2]);
-			
 		}
-		
 	}
 }
