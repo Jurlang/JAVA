@@ -39,12 +39,15 @@ public class TableTest extends JFrame {
 		JButton setBtn = new JButton("set");
 		setBtn.addActionListener(new MyListener());
 
+		JButton allBtn = new JButton("all");
+		allBtn.addActionListener(new MyListener());
 		JPanel p = new JPanel();
 
 		p.add(tfName);
 		p.add(tfRow);
 		p.add(getBtn);
 		p.add(setBtn);
+		p.add(allBtn);
 
 //		sp.setPreferredSize(new Dimension(200,100)); //크기정해준다. Dimension(가로,세로)
 		add(sp);
@@ -61,16 +64,30 @@ public class TableTest extends JFrame {
 			String str = e.getActionCommand();
 
 			TableModel model = table.getModel();
-			int row = Integer.parseInt(tfRow.getText());
 
 			if (str.contentEquals("set")) {
 				String name = tfName.getText();
+				int row = Integer.parseInt(tfRow.getText());
 				model.setValueAt(name, row, 0);
 				tfName.setText("");
 				tfRow.setText("");
 			} else if (str.contentEquals("get")) {
+				int row = Integer.parseInt(tfRow.getText());
 				String name = (String) model.getValueAt(row, 0);
 				tfName.setText(name);
+			} else if (str.contentEquals("all")) {
+				int rowNum = model.getRowCount();
+				int colNum = model.getColumnCount();
+				for (int col = 0; col < colNum; col++) {
+					System.out.print(model.getColumnName(col) + "\t");
+				}
+				System.out.println();
+				for (int i = 0; i < rowNum; i++) {
+					for (int j = 0; j < colNum; j++) {
+						System.out.print(model.getValueAt(i, j) + "\t");
+					}
+					System.out.println();
+				}
 			}
 		}
 
