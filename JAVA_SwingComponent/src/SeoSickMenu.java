@@ -72,17 +72,17 @@ public class SeoSickMenu extends JFrame{
 			String cmd = e.getActionCommand();
 			switch(cmd) {
 			case "∆˘∆Æ":
-				strLa.setFont(new Font("±º∏≤", Font.BOLD, 14));
+				strLa.setFont(new Font("±º∏≤", Font.PLAIN, 14));
 				break;
 			case "≈©±‚»Æ¥Î":
 				x = strLa.getFont();
 				y = x.getSize();
-				strLa.setFont(new Font("±º∏≤", Font.BOLD, y + 2));
+				strLa.setFont(new Font("±º∏≤", Font.PLAIN, y + 5));
 				break;
 			case "≈©±‚√‡º“":
 				x = strLa.getFont();
 				y = x.getSize();
-				strLa.setFont(new Font("±º∏≤", Font.BOLD, y - 2));
+				strLa.setFont(new Font("±º∏≤", Font.PLAIN, y - 5));
 				break;
 			case "ª°∞≠":
 				strLa.setForeground(Color.red);
