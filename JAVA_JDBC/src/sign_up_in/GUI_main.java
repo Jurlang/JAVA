@@ -4,6 +4,7 @@ import java.awt.EventQueue;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -74,6 +75,7 @@ public class GUI_main extends JFrame {
 
 		main_btnShow = new JButton("\uC804\uCCB4\uBCF4\uAE30");
 		main_btnShow.setBounds(12, 10, 189, 64);
+		main_btnShow.addActionListener(l);
 		panel_2.add(main_btnShow);
 
 		JPanel main_taPanel = new JPanel();
@@ -104,13 +106,18 @@ public class GUI_main extends JFrame {
 			switch (cmd) {
 			case "회원가입":
 				frame.setVisible(false);
-				new GUI_son();
+				new GUI_son(frame);
 				break;
 			case "로그인":
 				frame.setVisible(false);
-				new GUI_sin();
+				new GUI_sin(frame);
 				break;
 			case "전체보기":
+				DBConn conn = DBConn.getInstance();
+				ArrayList<Member> arr = conn.selectAll();
+				for(int i=0;i<arr.size(); i++) {
+					main_taShow.append(arr.get(i).toString()+ "\n");
+				}
 			}
 		}
 	}
