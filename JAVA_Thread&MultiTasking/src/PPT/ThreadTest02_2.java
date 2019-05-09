@@ -14,7 +14,7 @@ public class ThreadTest02_2 extends Thread{
 		this.check = false;
 	}
 	public void run() {
-		for(int i=0;true;i++) {
+		while(true) {
 			try {
 				sleep(1000);
 				if(check == true) {
