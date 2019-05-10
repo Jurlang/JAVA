@@ -1,14 +1,8 @@
 package PPT.EX_03;
 
-import java.awt.Container;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
 @SuppressWarnings("serial")
 public class ThreadTest_03 extends JFrame {
@@ -65,7 +59,6 @@ public class ThreadTest_03 extends JFrame {
 				th.start();
 			}else if(cmd.contentEquals("³¡")) {
 				th.finish();
-				//th.interrupt();
 			}
 		}
 		
