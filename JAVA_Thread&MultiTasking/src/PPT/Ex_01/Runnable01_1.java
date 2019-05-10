@@ -1,4 +1,4 @@
-package PPT;
+package PPT.Ex_01;
 
 import javax.swing.JLabel;
 

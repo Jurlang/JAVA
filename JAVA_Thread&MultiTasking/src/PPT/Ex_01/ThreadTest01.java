@@ -1,4 +1,4 @@
-package PPT;
+package PPT.Ex_01;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
