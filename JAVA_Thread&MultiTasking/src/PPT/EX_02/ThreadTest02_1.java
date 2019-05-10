@@ -1,4 +1,4 @@
-package PPT;
+package PPT.EX_02;
 
 import java.awt.Color;
 
