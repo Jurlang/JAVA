@@ -6,14 +6,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
 
 @SuppressWarnings("serial")
 public class PMainFrame extends JFrame {
 
 	private JPanel contentPane;
-	private JTextArea ta;
 
 	/**
 	 * Launch the application.
