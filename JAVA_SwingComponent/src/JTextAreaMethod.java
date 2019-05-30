@@ -1,36 +1,32 @@
-import java.awt.BorderLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
 
 @SuppressWarnings("serial")
 public class JTextAreaMethod extends JFrame{
 	JTextField tf;
 	JTextArea ta;
-	
+	JPanel contentPane;
 	JTextAreaMethod(){
-		this.setTitle("제목없음");
-		this.setSize(300,300);
-		
-		tf = new JTextField();
-		ta = new JTextArea();
-		add(tf, BorderLayout.NORTH);
-		add(new JScrollPane(ta));
-		tf.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				ta.append(tf.getText()+"\n");
-				tf.setText("");
-			}
-			
-		});
-		
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setBounds(100,100,500,360);
+		contentPane = new JPanel();
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(12, 10, 451, 303);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JTextArea ta = new JTextArea();
+		ta.setBounds(74,10,238,236);
+		JScrollPane ta2 = new JScrollPane(new JTextArea());
+		ta2.setLocation(0, 0);
+		ta2.setSize(369, 246);
+		//panel.add(ta);
+		panel.add(ta2);
+		
 		this.setVisible(true);
 	}
 	public static void main(String[] args) {
