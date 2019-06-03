@@ -102,10 +102,6 @@ public class Booklist {
   
     }
     
-    private void update_Book() {
-    	
-    }
-    
     public static void main(String args[]) {
     	Booklist so = new Booklist();
     	so.all_Book();
